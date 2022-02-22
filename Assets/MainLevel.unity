@@ -7912,6 +7912,7 @@ MonoBehaviour:
   camSweetSpot: 5.5
   moveSpeed: 1.6
   jumpForce: 4
+  cannon: {fileID: 0}
   target: {fileID: 745879176}
   playerRenderer: {fileID: 1928285460}
   cam: {fileID: 519420031}

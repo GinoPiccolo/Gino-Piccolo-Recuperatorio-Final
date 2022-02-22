@@ -10,6 +10,7 @@ public class PlayerMoveScript : MonoBehaviour
     public float jumpForce = 5f;
 
     private Vector2 mouse_pos;
+    public GameObject cannon;
     public Transform target;
     private Vector2 object_pos;
     private float angle;
@@ -37,7 +38,8 @@ public class PlayerMoveScript : MonoBehaviour
             Jump();
         }
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            SceneManager.LoadScene(0);
+            Grounded.gano = false;
+            SceneManager.LoadScene(6);
         }
     }
     private void FixedUpdate() // esto sirve para trabajar con fisicas porque iguala el rendimiento del juego sin importar la máquina
@@ -50,6 +52,7 @@ public class PlayerMoveScript : MonoBehaviour
             mouse_pos.y = mouse_pos.y - object_pos.y;                      
             angle = Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg - 90f;
             target.transform.rotation = Quaternion.Euler(0, 0, angle);
+            cannon.transform.rotation = Quaternion.Euler(0, 0, angle);
         } 
 
         void Jump()
@@ -60,6 +63,6 @@ public class PlayerMoveScript : MonoBehaviour
 
         void DeathPlayer()
         {
-            SceneManager.LoadScene(1);
-        }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+         }
 }

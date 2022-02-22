@@ -12,6 +12,9 @@ public class LoadMainMenu : MonoBehaviour
 	}
 
 	void TaskOnClick(){
+		Grounded.nivel = 0;
 		SceneManager.LoadScene(0);
-}
+		Cursor.lockState = CursorLockMode.None;
+		Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+	}
 }

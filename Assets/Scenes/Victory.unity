@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 224545605}
   - component: {fileID: 224545607}
   - component: {fileID: 224545606}
+  - component: {fileID: 224545608}
   m_Layer: 5
   m_Name: Ganaste
   m_TagString: Untagged
@@ -193,7 +194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Victoria
+  m_Text: 'd
 
 '
 --- !u!222 &224545607
@@ -204,6 +205,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224545604}
   m_CullTransparentMesh: 1
+--- !u!114 &224545608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224545604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c74ff8440e9f147a3caaa96e5a5d70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text1: {fileID: 224545606}
 --- !u!1 &935431333
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,6 +374,7 @@ GameObject:
   - component: {fileID: 1080927006}
   - component: {fileID: 1080927008}
   - component: {fileID: 1080927007}
+  - component: {fileID: 1080927009}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -419,7 +434,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Reintentar
+  m_Text: d
 --- !u!222 &1080927008
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -428,6 +443,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080927005}
   m_CullTransparentMesh: 1
+--- !u!114 &1080927009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080927005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda414535ca3d274e80bb455047d9659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text1: {fileID: 1080927007}
 --- !u!1 &1321583891
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,9 +468,9 @@ GameObject:
   - component: {fileID: 1321583896}
   - component: {fileID: 1321583895}
   - component: {fileID: 1321583894}
-  - component: {fileID: 1321583893}
+  - component: {fileID: 1321583897}
   m_Layer: 5
-  m_Name: Reintentar
+  m_Name: Siguiente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -468,19 +496,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000015259, y: -179}
   m_SizeDelta: {x: 270, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1321583893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321583891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd5eaa74389832c4ca8b122ca23c5428, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yourButton: {fileID: 1321583894}
 --- !u!114 &1321583894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,6 +578,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321583891}
   m_CullTransparentMesh: 1
+--- !u!114 &1321583897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321583891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe41ced70f8eef147b0034f586bfdc86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yourButton: {fileID: 1321583894}
+  cursorArrow: {fileID: 2800000, guid: 7e5261673739ad44685e19c6a5009dc7, type: 3}
 --- !u!1 &1479268698
 GameObject:
   m_ObjectHideFlags: 0

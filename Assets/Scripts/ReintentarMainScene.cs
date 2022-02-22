@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ReintentarMainScene : MonoBehaviour
 {	public Button yourButton;
-
+	public Texture2D cursorArrow;
 	void Start() {
 		Button btn = yourButton.GetComponent<Button>();
 		btn.onClick.AddListener(TaskOnClick);
@@ -14,5 +14,7 @@ public class ReintentarMainScene : MonoBehaviour
 
 	void TaskOnClick(){
 		SceneManager.LoadScene(1);
+		Cursor.SetCursor(cursorArrow, Vector2.zero, CursorMode.ForceSoftware);
+		Cursor.lockState = CursorLockMode.Confined;
 	}
 }
